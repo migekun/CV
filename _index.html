@@ -5,20 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Miguel Ángel Navas García</title>
 
-    <!-- Bootstrap -->
     <link href="./js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <style>
         .top-margin {
-            margin-top: 50px
+            margin-top: 50px;
         }
 
-        .header-title {
-            color: #ccc
+        .top-margin-nav {
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -33,15 +31,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Miguel Ángel Navas</a>
+                <div>
+                    <img class="img-circle top-margin-nav" width="40px" height="40px" src="img/saitama.png">
+                    <a class="navbar-brand" href="#jumbo">Miguel Ángel Navas</a>
+                </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Employment</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#employment">Employment</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -63,49 +64,45 @@
             </div>
         </div>
     </div>
-
     <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Software Engineer</h2>
-                <h3>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h3>
-                <p>October 2015 – Present</p>
-                <p><a class="btn btn-default" href="#" role="button" data-toggle="collapse" data-target="#experience-1">View details »</a></p>
-                <div id="experience-1" class="collapse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
+        <div id="profile" class="container panel panel-default">
+            <h2>Profile</h2>
+            <p>In a nutshell, while I was studying at the University, I developed my career working in IT companies, working on applications in web environment with edge technologies such: Java, J2EE, Struts, JSF (which I have completed an authorized certification by Sun Microsystems), Jsp, Jstl, AngularJs, etc. (for further information see attached CV). Since 2005 I have been developing application for health, tourism and education industries in different companies. I speak Spanish, as my mother language; also English: I achieved a B2 level in the Common European Framework of Reference for Language as First Certificated Exam.
+            </p>
+            <p>
+                I consider myself to be a person highly motivated and eager, used to work under pressure and high stress levels. Furthermore, my strong organizational skill and ability to work independently, as well as in close-knit teams, will be a satisfactory asset for the IT department I work.
+            </p>
         </div>
 
-        <div class="container">
-            <h2>Simple Collapsible</h2>
-            <p>Click on the button to toggle between showing and hiding content.</p>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-            <div id="demo" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div id="employment" class="panel panel-default">
+            <!-- Example row of columns -->
+            <div class="row panel-body">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-2"><img class="img-rounded" width="50px" height="50px" src="img/logo-caib.png"></div>
+                        <div class="col-md-9">
+                            <h2>Software Engineer</h2></div>
+                    </div>
+                    <h3>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h3>
+                    <h4>October 2015 – Present</h4>
+                    <p><a class="btn btn-default" href="#experience-1" role="button" data-toggle="collapse" data-target="#experience-1">View details »</a></p>
+                    <div id="experience-1" class="collapse">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <hr>
+        <div id="footer" class="panel panel-default">
+            <div class="panel-body">
+                <footer>
+                    <p>&copy; 2016 Miguel Ángel Navas García</p>
+                </footer>
+            </div>
 
-        <footer>
-            <p>&copy; 2016 Miguel Ángel Navas García</p>
-        </footer>
+        </div>
     </div>
     <!-- /container -->
 
