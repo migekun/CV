@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,103 +11,103 @@
     <!-- Bootstrap -->
     <link href="./js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    
+
     <style>
-      .top-margin {margin-top: 50px}
-      .banner {background-image: url(img/banner.jpeg)}
-      .header-title {color: #ccc}
+        .top-margin {
+            margin-top: 50px
+        }
+
+        .header-title {
+            color: #ccc
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Miguel Ángel Navas</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Miguel Ángel Navas</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Employment</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-<!--
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input placeholder="Email" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <input placeholder="Password" class="form-control" type="password">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
--->
-        </div><!--/.navbar-collapse -->
-      </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron banner">
-      <div class="container top-margin">
-           <div class="row">
-            <div class="col-md-3">
-              <img class="img-circle" width="200px" height="200px" src="img/saitama.png">
+    <div id="jumbo" class="jumbotron banner">
+        <div class="container top-margin">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-circle" width="200px" height="200px" src="img/saitama.png">
+                </div>
+                <div class="col-md-9">
+                    <h1>Mycv</h1>
+                    <p>
+                        Software Engineer
+                    </p>
+                </div>
             </div>
-            <div class="col-md-9">
-              <h1>Mycv</h1>
-              <p>
-                  Software Engineer 
-              </p>
-            </div>
-          </div>
-          
-        
-<!--        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>-->
-      </div>
+        </div>
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Software Engineer</h2>
-          <h3>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h3>
-          <p>October 2015 – Present</p>    
-          <p><a class="btn btn-default" href="#" role="button" data-toggle="collapse" data-target="#experience-1">View details »</a></p>
-            <div id="experience-1" class="collapse">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Software Engineer</h2>
+                <h3>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h3>
+                <p>October 2015 – Present</p>
+                <p><a class="btn btn-default" href="#" role="button" data-toggle="collapse" data-target="#experience-1">View details »</a></p>
+                <div id="experience-1" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-      </div>
 
         <div class="container">
-      <h2>Simple Collapsible</h2>
-      <p>Click on the button to toggle between showing and hiding content.</p>
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-      <div id="demo" class="collapse">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
-    </div>
-      <hr>
+            <h2>Simple Collapsible</h2>
+            <p>Click on the button to toggle between showing and hiding content.</p>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+        <hr>
 
-      <footer>
-        <p>&copy; 2016 Miguel Ángel Navas García</p>
-      </footer>
-    </div> <!-- /container -->
+        <footer>
+            <p>&copy; 2016 Miguel Ángel Navas García</p>
+        </footer>
+    </div>
+    <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -116,10 +117,11 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-       
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./js/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
