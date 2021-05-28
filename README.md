@@ -1,2 +1,2 @@
 # CV
-Bootstrap plain web CV
+Web CV; about me
