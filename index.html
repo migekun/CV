@@ -8,13 +8,9 @@
 	<meta name="twitter:dnt" content="on">
 	<meta name="description" content="Miguel Ángel Navas García CV">
 	<title>Miguel Ángel Navas García</title>
-
-	<!--link href="./js/bootstrap/css/bootstrap.min.css" rel="stylesheet"-->
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-	<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" crossorigin="anonymous"-->
+		
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<style>
 		.top-margin {
 			margin-top: 50px;
@@ -22,6 +18,14 @@
 
 		.top-margin-nav {
 			margin-top: 5px;
+		}
+		.thumbnail-size-education {
+			width: 100px !important;
+			height:125px !important;
+		}
+		.thumbnail-size {
+			width: 100px !important;
+			height:150px !important;
 		}
 	</style>
 </head>
@@ -34,10 +38,6 @@
 			<img class="rounded-circle" width="50px" height="50px" src="img/saitama.png">
 			<span class="fs-4">Miguel Ángel Navas García</span>
 		</div>
-      <!--a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-        <span class="fs-4">Jumbotron example</span>
-      </a-->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light ">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">CV</a>
@@ -84,7 +84,8 @@
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="profile">Profile</h2>
 			<p>
-				Hello!, while I was studying at the University I grew my career by working in IT companies, developing on web environment applications with edge technologies such as Java, Spring MVC, J2EE, Struts, JSF (which I have completed an authorized certification by Sun Microsystems), Jsp, Jstl, AngularJs, etc. (for further information see attached CV). I have been developing applications for health, tourism and education industries in different companies since 2005. 
+				Hello!
+				<br/>While I was studying at the University I grew my career by working in IT companies, developing, on web environment, applications with edge technologies such as Java, Spring MVC, J2EE, Struts, JSF (which I have completed an authorized certification by Sun Microsystems), Jsp, Jstl, AngularJs, etc. (for further information see attached CV). I have been developing applications for health, tourism and education industries in different companies since 2005. 
 			</p>
 			<p>
 				I consider myself to be a person highly motivated and eager, used to work under pressure and high stress levels. Furthermore, my strong organizational skill and ability to work independently, as well as in close-knit teams, will be a satisfactory asset for the IT department.
@@ -93,45 +94,218 @@
 		
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="education">Education</h2>	
+			<div class="row">
+				<div class="col-xs-6 col-sm-6">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size-education img-fluid" src="img/uoc_masterbrand_vertical.png">
+						<div>
+							<h5 class="mt-0">Computer Sciences Master Degree</h5>
+							<h6><a href="https://studies.uoc.edu/en/study-at-the-uoc" target="_blank">Universitat Oberta de Catalunya <i class="fas fa-external-link-alt"></i></a></h6>
+							<p>Febrery 2006 – August 2009</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size-education img-fluid" src="img/escut_uib.png">
+						<div>
+							<h5 class="mt-0">Computer Science Bachelor's degree</h5>
+							<h6><a href="https://www.uib.eu/Learn/estudis-de-grau/" target="_blank">Universitat de les Illes Balears <i class="fas fa-external-link-alt"></i></a></h6>
+							<p>Setember 2000 – Setember 2005</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="employment">Employment</h2>
-			<div class="row">
+			<div name="job_1" class="row">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
-						<img class="flex-shrink-0 me-3" src="img/logo-caib.png">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/logo-caib.png">
 						<div>
 							<h5 class="mt-0">Software Engineer</h5>
 							<h6>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h6>
-							<p>October 2015 – Present</p>
-							<div>
+							<p>October 2015 – Present @Balearic Islands</p>
+							<p>
+								<a class="btn btn-default" href="#experience-1" role="button" data-bs-toggle="collapse" data-bs-target="#experience-1">View details »</a>
+							</p>
+							<div id="experience-1" class="collapse">
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">Spanish Government; Management Department.</li>
-									<li class="list-group-item">Web Development for management of schools and high schools.</li>
-									<li class="list-group-item">Development Web Servlet, ExtJS, AngularJS, Spring MVC, Hibernate, Bootstrap, GIT, GitLab. Front-End & Back-End development.</li>
+									<li class="list-group-item">Integrated School & High School management. Online family portal. Absense notification system. Teachers&Students schedule handling. Etc.</li>
+									<li class="list-group-item">Web Development: Boostrap, CSS3, LESS, HTML5.</li>
+									<li class="list-group-item">Front-End Development: Spring MVC, AngularJS, ExtJS, jQuery.</li>
+									<li class="list-group-item">Back-end Development: EJB, Hibernate, iText, Testing, Electronic Signature.</li>
+									<li class="list-group-item">DB: Oracle.</li>
+									<li class="list-group-item">Linux & Windows environment.</li>
 								</ul>
 							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div name="job_2" class="row">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
-						<img class="flex-shrink-0 me-3" src="img/logo-caib.png">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/booking_core.png">
 						<div>
 							<h5 class="mt-0">Software Engineer</h5>
-							<h6>Conselleria d'Educació i Cultura del Govern de les Illes Balears</h6>
-							<p>October 2015 – Present</p>
+							<h6>Booking Core</h6>
+							<p>Juny 2015 – October 2015 @Balearic Islands</p>
 							<p>
 								<a class="btn btn-default" href="#experience-2" role="button" data-bs-toggle="collapse" data-bs-target="#experience-2">View details »</a>
 							</p>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<div id="experience-2" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Design of a custom web 100% responsive and sales focused.</li>
+									<li class="list-group-item">Direct product designed and tailored 100% for hotels, providing everything it is needed to start a successful online hotel business.</li>
+									<li class="list-group-item">Backend analysis and development. Data migration scripting.</li>
+									<li class="list-group-item">Full Stack development , JEE7, Ibatis, MySQL, CkEditor, JSF 2.2, Primefaces.</li>
+									<li class="list-group-item">Continuous integration by Jenkins.</li>
+									<li class="list-group-item">DB: MySQL.</li>
+									<li class="list-group-item">Linux.</li>
+								</ul>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div name="job_3" class="row">
+				<div class="col-xs-12">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/skillhouse.jfif">
+						<div>
+							<h5 class="mt-0">Software Engineer</h5>
+							<h6>Skillhouse Staffing Solutions KK</h6>
+							<p>December 2013 – October 2014 @Tokyo</p>
+							<p>
+								<a class="btn btn-default" href="#experience-3" role="button" data-bs-toggle="collapse" data-bs-target="#experience-3">View details »</a>
+							</p>
+							<div id="experience-3" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Working as external consultant at Porters.jp. HR Cloud Environment.</li>
+									<li class="list-group-item">Development of Web application for Human Resource management.</li>
+									<li class="list-group-item">Development Back-End, JEE7, memCache, MySQL, JABX, Solr, communication with Front-End by REST (JSON).</li>
+									<li class="list-group-item">CI & CD using Jenkins.</li>
+									<li class="list-group-item">DB: MySQL.</li>
+									<li class="list-group-item">Linux VM on Windows environment.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div name="job_4" class="row">
+				<div class="col-xs-12">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/bitel.png">
+						<div>
+							<h5 class="mt-0">Senior Developer</h5>
+							<h6>Bitel Innovació Telemàtica</h6>
+							<p>October 2008 – May 2013 @Balearic Islands</p>
+							<p>
+								<a class="btn btn-default" href="#experience-4" role="button" data-bs-toggle="collapse" data-bs-target="#experience-4">View details »</a>
+							</p>
+							<div id="experience-4" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Spanish Government; Management Department.</li>
+									<li class="list-group-item">Integrated School & High School management. Online family portal. Absense notification system. Teachers&Students schedule handling. Etc.</li>
+									<li class="list-group-item">Development Web Servlet, ExtJS, jQuery, Hibernate, iText (PDF document generation).</li>
+									<li class="list-group-item"> Front-End & Back-End development.</li>
+									<li class="list-group-item">DB: Oracle.</li>
+									<li class="list-group-item">Linux environment.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div name="job_5" class="row">
+				<div class="col-xs-12">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/brujula.jfif">
+						<div>
+							<h5 class="mt-0">Senior Developer</h5>
+							<h6>Brújula</h6>
+							<p>August 2006 – November 2007 @Balearic Islands</p>
+							<p>
+								<a class="btn btn-default" href="#experience-5" role="button" data-bs-toggle="collapse" data-bs-target="#experience-5">View details »</a>
+							</p>
+							<div id="experience-5" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Outsourcing at Barceló Viajes (Online Travel agency). Internet Department.</li>
+									<li class="list-group-item">Reverse engineering, new version with MVC pattern using JSF, Rich Faces, Facelets, XHTML..</li>
+									<li class="list-group-item">Development Java, Web Servlet, PrepareStatement.</li>
+									<li class="list-group-item">Front-End development.</li>
+									<li class="list-group-item">Back-End PL/SQL.</li>
+									<li class="list-group-item">Windows environment.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div name="job_6" class="row">
+				<div class="col-xs-12">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/valadis.png">
+						<div>
+							<h5 class="mt-0">Senior Developer</h5>
+							<h6>Valadis Systems</h6>
+							<p>August 2006 – November 2007 @Balearic Islands</p>
+							<p>
+								<a class="btn btn-default" href="#experience-6" role="button" data-bs-toggle="collapse" data-bs-target="#experience-6">View details »</a>
+							</p>
+							<div id="experience-6" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Analysis and development task applied for tourist environment B2B (MVC pattern, Ajax).</li>
+									<li class="list-group-item">XML external integration with other systems: GTA, Boscolo, Relais du Silence (rds), Bedsonline, GoGlobal, Rate Tiger. (Persistence).</li>
+									<li class="list-group-item">Development Java, Web Servlet, jQuery, PrepareStatement.</li>
+									<li class="list-group-item">Front-End development.</li>
+									<li class="list-group-item">DB: PostgreSQL.</li>
+									<li class="list-group-item">Linux environment.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div name="job_7" class="row">
+				<div class="col-xs-12">
+					<div class="d-flex position-relative border p-3 mb-4">
+						<img class="img-thumbnail me-3 thumbnail-size" src="img/cibal.png">
+						<div>
+							<h5 class="mt-0">Junior Developer</h5>
+							<h6>Cibal multimedia</h6>
+							<p>October 2005 – July 2006 @Balearic Islands</p>
+							<p>
+								<a class="btn btn-default" href="#experience-7" role="button" data-bs-toggle="collapse" data-bs-target="#experience-7">View details »</a>
+							</p>
+							<div id="experience-7" class="collapse">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Development task in sanitary environment.</li>
+									<li class="list-group-item">J2EE 1.4, MVC (Struts, Javascript, CSS).</li>
+									<li class="list-group-item">Front-End development.</li>
+									<li class="list-group-item">DB: MySQL.</li>
+									<li class="list-group-item">Windows environment.</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
     </div>
-		
+		<div class="p-3 mb-4 bd-content border rounded-3">
+			<h2 id="skills">Skills</h2>
+			<p>
+			</p>
+			<p>
+				I consider myself to be a person highly motivated and eager, used to work under pressure and high stress levels. Furthermore, my strong organizational skill and ability to work independently, as well as in close-knit teams, will be a satisfactory asset for the IT department.
+			</p>       
+    </div>
 	</div>
 </main>
 
