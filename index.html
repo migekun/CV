@@ -95,6 +95,7 @@
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="education">Education</h2>	
 			<div class="row">
+			<!--UOC-->
 				<div class="col-xs-6 col-sm-6">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size-education img-fluid" src="img/uoc_masterbrand_vertical.png">
@@ -106,6 +107,7 @@
 						</div>
 					</div>
 				</div>
+				<!--UIB-->
 				<div class="col-xs-6 col-sm-6">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size-education img-fluid" src="img/escut_uib.png">
@@ -121,7 +123,7 @@
 
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="employment">Employment</h2>
-			<div name="job_1" class="row">
+			<div name="job_1" class="row" data-name="EDUCACIO">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/logo-caib.png">
@@ -147,7 +149,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_2" class="row">
+			<div name="job_2" class="row" data-name="BOOKINGCORE">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/booking_core.png">
@@ -173,7 +175,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_3" class="row">
+			<div name="job_3" class="row" data-name="PORTERS">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/skillhouse.jfif">
@@ -186,7 +188,7 @@
 							</p>
 							<div id="experience-3" class="collapse">
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">Working as external consultant at Porters.jp. HR Cloud Environment.</li>
+									<li class="list-group-item">Working as external consultant at HR Cloud Environment company.</li>
 									<li class="list-group-item">Development of Web application for Human Resource management.</li>
 									<li class="list-group-item">Development Back-End, JEE7, memCache, MySQL, JABX, Solr, communication with Front-End by REST (JSON).</li>
 									<li class="list-group-item">CI & CD using Jenkins.</li>
@@ -198,7 +200,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_4" class="row">
+			<div name="job_4" class="row" data-name="BITEL">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/bitel.png">
@@ -223,7 +225,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_5" class="row">
+			<div name="job_5" class="row" data-name="BRUJULA">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/brujula.jfif">
@@ -237,7 +239,7 @@
 							<div id="experience-5" class="collapse">
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">Outsourcing at Barceló Viajes (Online Travel agency). Internet Department.</li>
-									<li class="list-group-item">Reverse engineering, new version with MVC pattern using JSF, Rich Faces, Facelets, XHTML..</li>
+									<li class="list-group-item">Reverse engineering, new version with MVC pattern using JSF, Rich Faces, Facelets, XHTML.</li>
 									<li class="list-group-item">Development Java, Web Servlet, PrepareStatement.</li>
 									<li class="list-group-item">Front-End development.</li>
 									<li class="list-group-item">Back-End PL/SQL.</li>
@@ -248,7 +250,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_6" class="row">
+			<div name="job_6" class="row" data-name="VALADIS">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/valadis.png">
@@ -273,7 +275,7 @@
 					</div>
 				</div>
 			</div>
-			<div name="job_7" class="row">
+			<div name="job_7" class="row" data-name="CIBAL">
 				<div class="col-xs-12">
 					<div class="d-flex position-relative border p-3 mb-4">
 						<img class="img-thumbnail me-3 thumbnail-size" src="img/cibal.png">
@@ -286,7 +288,7 @@
 							</p>
 							<div id="experience-7" class="collapse">
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">Development task in sanitary environment.</li>
+									<li class="list-group-item">Start-up with tailored services: Sanitary management services. Document management, etc.</li>
 									<li class="list-group-item">J2EE 1.4, MVC (Struts, Javascript, CSS).</li>
 									<li class="list-group-item">Front-End development.</li>
 									<li class="list-group-item">DB: MySQL.</li>
@@ -300,21 +302,129 @@
     </div>
 		<div class="p-3 mb-4 bd-content border rounded-3">
 			<h2 id="skills">Skills</h2>
-			<p>
-			</p>
-			<p>
-				I consider myself to be a person highly motivated and eager, used to work under pressure and high stress levels. Furthermore, my strong organizational skill and ability to work independently, as well as in close-knit teams, will be a satisfactory asset for the IT department.
-			</p>       
+			<!--TODO cambiar a tabs: https://getbootstrap.com/docs/5.0/components/navs-tabs/#javascript-behavior-->
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="accordion accordion-flush" id="skillAccordion">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingWeb">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									<i class="fas fa-code fa-2x"></i>&nbsp;Web
+								</button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingWeb" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">HTML4. CSS. Bootstrap, Jsp, jstl., AdminLTE</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingJS">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+									<i class="fab fa-js-square fa-2x"></i>&nbsp;Javascript 
+								</button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingJS" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Ajax, JSON, XML, REST. AngularJS, jQuery, ExtJS, d3js, Native JavaScript.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingJava">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fab fa-java fa-2x"></i>&nbsp;Java
+								</button>
+							</h2>
+							<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingJava" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Java 1.7, JEE, Struts1, JSF 2.0 (Java Server Faces), EJB2, Ibatis, Hibernate, Servlet, Spring MVC, Spring Scheduling Spring Boot (Packaging tool), Basic knowledge on java 1.8.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingUT">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-tools fa-2x"></i>&nbsp;Unit Testing
+								</button>
+							</h2>
+							<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingUT" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Junit, Mockito-1.9, Hamcrest (Matchers), Jenkins, TDD (Test-driven development) and Testing.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingBBDD">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-database fa-2x"></i>&nbsp;Data Base
+								</button>
+							</h2>
+							<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingBBDD" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">PostgreSQL, MySQL, Oracle, Interbase. Migration scripting.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingServer">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-server fa-2x"></i>&nbsp;Servers
+								</button>
+							</h2>
+							<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingServer" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">PostgreSQL, MySQL, Oracle, Interbase. Migration scripting.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingEnvironmet">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fab fa-dev fa-2x"></i>&nbsp;Environment
+								</button>
+							</h2>
+							<div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingEnvironment" data-bs-parent="#skillAccordion">
+								<div class="accordion-body"><i class="fab fa-windows" aria-hidden="true" title="Windows"></i>&nbsp;Windows, <i class="fab fa-ubuntu" title=Ubuntu></i>&nbsp;Ubuntu, <i class="fab fa-centos" title=CentOS></i>&nbsp;CentOS, <i class="fab fa-apple"></i>&nbsp;MacOS, Eclipse, IntelliJ, Toad, <i class="fab fa-git-square"></i>&nbsp;<i class="fab fa-gitlab"></i>&nbsp;<i class="fab fa-github"></i>&nbsp;GIT, <i class="fas fa-code-branch"></i>&nbsp;SVN, Ant.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingAgile">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-redo fa-2x"></i>&nbsp;Agile Software Development
+								</button>
+							</h2>
+							<div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingAgile" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Scrum (Development Team member). eXtreme Programming (Pair programming).</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingDev">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-ruler fa-2x"></i>&nbsp;Software Development
+								</button>
+							</h2>
+							<div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingDev" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Métrica v3 (Spanish Government Methodology for software life cycle). Magerit (Spanish Government Methodology for information system risk management).Cascade development.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingKnow">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-university fa-2x"></i>&nbsp;Academic Knowledge
+								</button>
+							</h2>
+							<div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingKnow" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">Structured programming, Object Oriented Development, Generics, Lambda, Pattern design, UML, Functional Programming, Clean Code, Code review.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOthers">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseThree">
+									<i class="fas fa-cubes fa-2x"></i>&nbsp;Others
+								</button>
+							</h2>
+							<div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingOthers" data-bs-parent="#skillAccordion">
+								<div class="accordion-body">MemCache (distributed in-memory key-value store - NoSQL), iText (dynamic pdf generation by Java), JAXB Jackson (XML JSON by Java), Solr. (Search Platform by RESTful web service) PHP, C, C++, FoxPro (wconnect), Ada.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
 	</div>
 </main>
-
 <footer class="pt-3 mt-4 text-muted border-top">
   © 2021
 </footer>
-
-
-
 
 -----------------------------------------------------
 
